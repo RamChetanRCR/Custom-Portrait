@@ -6,10 +6,12 @@ Unlike traditional chatbots, Custom Portrait focuses on personality modeling, co
 
 ## Project Description
 
-Custom Portrait is an interactive AI system that enables real-time, personality-driven conversational interaction with a virtual portrait. The system allows developers to define a custom character profile consisting of background, personality traits, speaking style, and behavioral rules. All user interactions are processed through a structured prompt-building pipeline that injects personality constraints, short-term conversational context, and long-term memory into each model call.
+Custom Portrait is a personal AI project that simulates a living portrait capable of interacting with users through natural conversation. The goal of the project is to build an AI character that can maintain a consistent personality, remember important details about the user, and respond coherently across long conversations.
 
-The architecture is designed in a modular manner, separating the personality engine, memory manager, prompt builder, response controller, and LLM interface into independent components. This design allows easy replacement of language models, memory strategies, and user interfaces without affecting the core logic.
+The system allows a developer to define a character using simple attributes such as background, personality traits, speaking style, and a small set of behavioral rules. Each user message is processed through a prompt-building pipeline that combines the character profile with recent conversation history and stored memory before sending it to the language model.
 
-A key focus of Custom Portrait is persistent memory. The system maintains both short-term conversational memory and long-term user-specific memory, enabling the portrait to recall important facts such as user identity and preferences across interactions. This significantly improves coherence and realism compared to stateless chatbots.
+The architecture is intentionally modular. Components such as personality handling, memory management, prompt construction, and model interaction are implemented as separate modules so that individual parts can be modified or replaced without changing the entire system.
 
-The current implementation supports text-based interaction and text-to-speech output, with a clear extension path toward multimodal interaction including speech input and facial animation. The project emphasizes clean system design, reproducibility, and extensibility, making it suitable as a portfolio project for AI and software engineering roles.
+A major focus of the project is memory. The system maintains short-term conversational context as well as long-term user-specific memory, allowing the portrait to recall facts such as the user’s name or preferences in later interactions. This helps the system behave more consistently than a stateless chatbot.
+
+The current version supports text-based interaction and optional text-to-speech output. The design is intended to be extended later with speech input and facial animation. This project was built as a portfolio project to demonstrate applied AI system design, prompt engineering, and clean software architecture.
